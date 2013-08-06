@@ -50,7 +50,7 @@ group :doc do
   gem 'sdoc', '0.3.20', require: false
 end
 
-  group :production do
+group :production do
   gem 'rails_12factor', '0.0.2'
   gem "pg", "~> 0.16.0"
 end
