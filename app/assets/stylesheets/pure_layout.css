@@ -4,13 +4,20 @@
     box-sizing: border-box;
 }
 
+
 body {
     margin: 0 auto;
     line-height: 1.7em;
+    color: rgb(119, 119, 119);
+    font-family: "proxima-nova",sans-serif;
 }
 
 .l-box {
-    padding: 1em;
+    padding: 1.3em;
+}
+
+.l-centered {
+    text-align: center;
 }
 
 .header {
@@ -33,20 +40,62 @@ body .primary-button {
     color: #fff;
 }
 
+
+/* --------------------------
+ * Footer Module Styles
+ * --------------------------
+*/
+.legal {
+    font-size: 100%;
+    border-top: 1px solid #eee;
+    padding: 0.5em 0;
+    background: #FAFAFA;
+
+}
+
+    .legal-license,
+    .legal-copyright {
+        margin: 0;
+    }
+
+    .legal-copyright,
+    .legal-links {
+        text-align: right;
+    }
+
+    .legal-links {
+        list-style: none;
+        margin: 0;
+    }
+
+    .legal-logo {
+        text-align: center;
+    }
+
 .splash {
     margin: 2em auto 0;
     padding: 3em 0.5em;
-    background: #eee;
+    background: #EBEBEB;
+
 }
     .splash .splash-head {
-        font-size: 300%;
+        color: #FF0000;
+        font-size: 600%;
         margin: 0em 0;
         line-height: 1.2em;
+        font-weight: lighter;
     }
     .splash .splash-subhead {
         color: #999;
         font-weight: 300;
         line-height: 1.4em;
+    }
+    .splash .splash-head-smaller{
+        color: #FF0000;
+        font-size: 500%;
+        margin: 0em 0;   
+        font-weight: lighter ;
+        line-height: 1em;
     }
     .splash .primary-button {
         font-size: 150%;
