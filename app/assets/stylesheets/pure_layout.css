@@ -1,0 +1,136 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0 auto;
+    line-height: 1.7em;
+    color: rgb(119, 119, 119);
+    font-family: "proxima-nova",sans-serif;
+}
+
+.l-box {
+    padding: 1.3em;
+}
+
+.l-centered {
+    text-align: center;
+}
+
+.header {
+    margin: 0 0;
+}
+
+    .header .pure-menu {
+        padding: 0.5em;
+    }
+
+        .header .pure-menu li a:hover,
+        .header .pure-menu li a:focus {
+            background: none;
+            border: none;
+            color: #aaa;
+        }
+
+body .primary-button {
+    background: #02a6eb;
+    color: #fff;
+}
+
+
+/* --------------------------
+ * Footer Module Styles
+ * --------------------------
+*/
+.legal {
+    font-size: 100%;
+    border-top: 1px solid #eee;
+    padding: 0.5em 0;
+    background: #FAFAFA;
+
+}
+
+    .legal-license,
+    .legal-copyright {
+        margin: 0;
+    }
+
+    .legal-copyright,
+    .legal-links {
+        text-align: right;
+    }
+
+    .legal-links {
+        list-style: none;
+        margin: 0;
+    }
+
+    .legal-logo {
+        text-align: center;
+    }
+
+.splash {
+    margin: 2em auto 0;
+    padding: 3em 0.5em;
+    background: #EBEBEB;
+
+}
+    .splash .splash-head {
+        color: #FF0000;
+        font-size: 600%;
+        margin: 0em 0;
+        line-height: 1.2em;
+        font-weight: lighter;
+    }
+    .splash .splash-subhead {
+        color: #999;
+        font-weight: 300;
+        line-height: 1.4em;
+    }
+    .splash .splash-head-smaller{
+        color: #FF0000;
+        font-size: 500%;
+        margin: 0em 0;   
+        font-weight: lighter ;
+        line-height: 1em;
+    }
+    .splash .primary-button {
+        font-size: 150%;
+    }
+
+
+.content .content-subhead {
+    color: #999;
+    padding-bottom: 0.3em;
+    text-transform: uppercase;
+    margin: 0;
+    border-bottom: 2px solid #eee;
+    display: inline-block;
+}
+
+.content .content-ribbon {
+    margin: 3em;
+    border-bottom: 1px solid #eee;
+}
+
+.ribbon {
+    background: #eee;
+    text-align: center;
+    padding: 2em;
+    color: #999;
+}
+    .ribbon h2 {
+        display: inline;
+        font-weight: normal;
+    }
+
+.footer {
+    background: #111;
+    color: #666;
+    text-align: center;
+    padding: 1em;
+    font-size: 80%;
+}
