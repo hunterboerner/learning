@@ -3,13 +3,16 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
+@font-face {
+  font-family: Raleway;
+  src: url('Raleway-Thin.otf');
+}
 
 body {
+    font-family: Raleway;
     margin: 0 auto;
     line-height: 1.7em;
     color: rgb(119, 119, 119);
-    font-family: "proxima-nova",sans-serif;
 }
 
 .l-box {
