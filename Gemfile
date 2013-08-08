@@ -10,6 +10,7 @@ gem 'will_paginate', '3.0.4'
 gem 'bootstrap-will_paginate', '0.0.9'
 gem 'pure-sass', '0.0.4'
 gem "haml", "~> 4.0.3"
+gem 'coveralls', require: false
 
 group :development, :test do
   gem 'sqlite3', '1.3.7'
