@@ -18,13 +18,25 @@
   src: font-url('RalewayExtraLight.otf');
 }
 
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+input {
+  height: auto !important;
+}
+
 body {
     font-family: Raleway;
     margin: 0 auto;
     line-height: 1.7em;
     color: rgb(119, 119, 119);
     margin: 2em auto 0;
-    padding: 3em 0.5em;
+    padding: 3em 0.0em;
 }
 
 .red{
@@ -327,7 +339,7 @@ pre .string, pre .support.value  {
     font-size: 500%;
     margin: 0em 0;   
     font-weight: 100;
-    line-height: 1em;
+    line-height: 1.4em;
 }
 .splash .primary-button {
     font-size: 150%;
