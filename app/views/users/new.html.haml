@@ -1,4 +1,21 @@
 - provide(:title, 'Sign up')
-.splash.l-centered
-	.pure-g-r.pure-u-2-3
-		%h1.splash-head-smaller Sign up
+.splash.pure-g-r
+    .l-centered
+        .pure-u-2-3
+            %h1.splash-head-smaller Sign up
+    .pure
+        .pure-u-1-3
+        .pure-u-1-3
+            = form_for(@user) do |f|
+                = f.label :name
+                = f.text_field :name
+                = f.label :email
+                = f.text_field :email
+                = f.label :password
+                = f.password_field :password
+                = f.label :password_confirmation, "Confirmation"
+                = f.password_field :password_confirmation
+                %br
+                
+                %br
+                = f.submit "Create my account", class: "btn btn-large btn-primary"
