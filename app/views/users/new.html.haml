@@ -9,16 +9,16 @@
             = form_for(@user) do |f|
                 = render 'shared/error_messages'
                 .pure-group
-                    // = f.label :name
+                    = f.label :name
                     = f.text_field :name, :placeholder => :name
-                    // = f.label :email
+                    = f.label :email
                     = f.text_field :email, :placeholder => :email
                 %br    
                 
                 .pure-group
-                    // = f.label :password
+                    = f.label :password
                     = f.password_field :password, :placeholder => :password
-                    // = f.label :password_confirmation, "Confirmation"
+                    = f.label :password_confirmation, "Confirmation"
                     = f.password_field :password_confirmation, :placeholder => "Retype password"
                  
                 %br
