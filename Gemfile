@@ -22,6 +22,11 @@ group :development, :test do
   gem 'childprocess', '0.3.6'
 end
 
+group :assets do
+  gem 'less'
+  gem "therubyracer", "~> 0.11.4"
+end
+
 group :test do
   gem 'selenium-webdriver', '2.0.0'
   gem 'capybara', '2.1.0'
