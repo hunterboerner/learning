@@ -1,3 +1,6 @@
+// VARIABLEZ
+$graybg: #EBEBEB;
+
 @mixin box_sizing {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -336,7 +339,7 @@ pre .string, pre .support.value  {
 }
 
 .splash {
-    background: #EBEBEB;
+    background: $graybg;
 
 }
 .splash .splash-head {
