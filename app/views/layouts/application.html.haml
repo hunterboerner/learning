@@ -12,7 +12,7 @@
         .content
             = render 'layouts/header'
             - flash.each do |key, value|
-                %div{:class => "alert alert-#{key}"}= value
+                = content_tag(:div, value, class: "alert alert-#{key}")
             = yield
             = render 'layouts/footer'
             = debug(params) if Rails.env.development?
