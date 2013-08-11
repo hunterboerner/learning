@@ -27,3 +27,4 @@ doc/
 .ruby-*
 .secret
 public/assets/**
+coverage/

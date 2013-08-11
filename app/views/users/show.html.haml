@@ -1,0 +1,27 @@
+- provide(:title, @user.name)
+.pure-g-r
+    %br
+    %br
+.pure-g-r
+    .pure-u-1-5 
+    .pure-u-1-5    
+        %h1
+            %span
+                = @user.name    
+    .pure-u-1-5
+        %div{:style => "margin-left: auto; margin-right: auto; width: 6em"}
+            = gravatar_for @user
+    .pure-u-1-5
+        %h1
+            %span
+                = @user.email
+    .pure-u-1-5
+.pure-g-r
+    .pure-u-1
+        %p.content
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
