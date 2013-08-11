@@ -5,20 +5,21 @@
 .pure-g-r
     .pure-u-1-5 
     .pure-u-1-5    
-        %h1
-            %span
+        .l-centered-v
+            %h1
                 = @user.name    
     .pure-u-1-5
-        %div{:style => "margin-left: auto; margin-right: auto; width: 6em"}
-            = gravatar_for @user
+        .l-centered
+            %div{:style => "margin-left: auto; margin-right: auto;"}
+                = gravatar_for @user
     .pure-u-1-5
-        %h1
-            %span
+        .l-centered-v
+            %h1
                 = @user.email
     .pure-u-1-5
 .pure-g-r
     .pure-u-1
-        %p.content
+        %p
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
