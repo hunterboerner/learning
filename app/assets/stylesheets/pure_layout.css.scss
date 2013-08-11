@@ -21,7 +21,9 @@ $graybg: #EBEBEB;
   src: font-url('RalewayExtraLight.otf');
 }
 
-
+p { 
+padding: 20px;
+}
 
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
@@ -72,6 +74,10 @@ body {
     text-align: center;
 }
 
+.l-centered-v{
+    text-align: center;
+    padding-top: 4em;
+}
 
 .header {
     margin: 0 0;
