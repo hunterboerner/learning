@@ -1,0 +1,28 @@
+- provide(:title, 'Sign up')
+.splash.pure-g-r
+    .l-centered
+        .pure-u-2-3
+            %h1.splash-head-smaller Sign up
+    .pure
+        .pure-u-1-3
+        .pure-u-1-3.pure-form
+            = form_for(@user) do |f|
+                = render 'shared/error_messages', object: f.object
+                .pure-group
+                    = f.label :name
+                    = f.text_field :name, :placeholder => :name
+                    = f.label :email
+                    = f.text_field :email, :placeholder => :email
+                %br    
+                
+                .pure-group
+                    = f.label :password
+                    = f.password_field :password, :placeholder => :password
+                    = f.label :password_confirmation, "Confirmation"
+                    = f.password_field :password_confirmation, :placeholder => "Retype password"
+                 
+                %br
+                = f.submit "Create my account"
+                %br
+
+                %br           

@@ -10,6 +10,7 @@ gem 'will_paginate', '3.0.4'
 gem 'bootstrap-will_paginate', '0.0.9'
 gem 'pure-sass', '0.0.4'
 gem "haml", "~> 4.0.3"
+gem 'coveralls', require: false
 
 group :development, :test do
   gem 'sqlite3', '1.3.7'
@@ -19,6 +20,11 @@ group :development, :test do
   gem 'spork-rails', github: 'sporkrb/spork-rails'
   gem 'guard-spork', '1.5.0'
   gem 'childprocess', '0.3.6'
+end
+
+group :assets do
+  gem 'less'
+  gem "therubyracer", "~> 0.11.4"
 end
 
 group :test do
@@ -50,7 +56,7 @@ group :doc do
   gem 'sdoc', '0.3.20', require: false
 end
 
-  group :production do
+group :production do
   gem 'rails_12factor', '0.0.2'
   gem "pg", "~> 0.16.0"
 end
