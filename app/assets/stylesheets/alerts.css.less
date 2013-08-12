@@ -37,7 +37,7 @@
 @state-info-border:              darken(spin(@state-info-bg, -10), 7%);
 
 @border-radius-base:          4px;
-@alert-padding:               15px;
+@alert-padding:               1.2em;
 @alert-border-radius:         @border-radius-base;
 @alert-link-font-weight:      bold;
 
@@ -62,15 +62,16 @@
 
 .alert {
   padding: @alert-padding (@alert-padding + 20) @alert-padding @alert-padding;
-  margin-bottom: @line-height-computed;
+  margin-bottom: 0;
   color: @alert-text;
   background-color: @alert-bg;
   border: 1px solid @alert-border;
   border-radius: @alert-border-radius;
+  padding-top: 2em;
 
   // Headings for larger alerts
   h4 {
-    margin-top: 0;
+    margin-top: 0.5em;
     // Specified for the h4 to prevent conflicts of changing @headingsColor
     color: inherit;
   }
@@ -98,7 +99,7 @@
     margin-bottom: 0;
   }
   > p + p {
-    margin-top: 5px;
+    margin-top: -2px;
   }
 }
 
