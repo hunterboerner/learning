@@ -7,7 +7,7 @@ describe "Sign in" do
     before { visit signin_path }
 
     it { should have_content('Sign in') }
-    it { should have_title(base_title('Sign in')) }
+    it { should have_title(full_title('Sign in')) }
   end
 
   describe "signin" do
