@@ -3,20 +3,14 @@
         .red
             Sample App
     %li.red WARNING: Not done! Probably will break!
-    %ul#std-menu-items
+    %ul
         %li= link_to "Home", root_path
         %li= link_to "Help", help_path
         - if signed_in?
+            %li= link_to "Sign out", signout_path, method: "delete"
             %li= link_to "Users", '#'
-            %li
-                
-                %a{:href => "#"}
-                    Account
-                %ul
-                    %li= link_to "Profile", current_user
-                    %li= link_to "Settings", '#'
-                    %li= link_to "Sign out", signout_path, method: "delete"
+            %li= link_to "Profile", current_user
+            %li= link_to "Settings", '#'
         - else
             %li= link_to "Sign in", signin_path
         %li= link_to "Contact", contact_path
-
