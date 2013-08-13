@@ -4,11 +4,15 @@
         = render 'layouts/shim'
         = render 'layouts/typekit'      
         %title= full_title(yield(:title))
+       
         
         = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+        = javascript_include_tag "http://yui.yahooapis.com/3.11.0/build/yui/yui-min.js"
         = javascript_include_tag "application", "data-turbolinks-track" => true
+
         = csrf_meta_tags
     %body
+        = javascript_include_tag "dropdown.js"
         .content
             .header
                 = render 'layouts/header'
