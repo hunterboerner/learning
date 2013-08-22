@@ -1,0 +1,23 @@
+- provide(:title, 'Sign in')
+.splash.pure-g-r
+    .l-centered
+        .pure-g-r.pure-u-2-3
+            %h1.splash-head-smaller Sign in
+    .pure
+        .pure-u-1-3
+        .pure-u-1-3.pure-form
+            = form_for(:session, url: sessions_path) do |f|
+                .pure-group
+                    = f.label :email
+                    = f.text_field :email, :placeholder => :email
+                    %br                      
+                
+                    = f.label :password
+                    = f.password_field :password, :placeholder => :password
+                     
+                    %br
+                    = f.submit "Sign in"
+                    %br
+                    %p
+                        New user? #{link_to "Sign up now!", signup_path}
+                    %br           

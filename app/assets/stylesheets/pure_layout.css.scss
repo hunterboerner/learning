@@ -90,7 +90,6 @@ body {
 .header .pure-menu li a:hover,
 .header .pure-menu li a:focus {
     background: none;
-    border: none;
     color: #aaa;
 }
 
@@ -346,6 +345,7 @@ pre .string, pre .support.value  {
 
 .splash {
     background: $graybg;
+    padding-top: 2.4em;
 
 }
 .splash .splash-head {

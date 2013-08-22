@@ -7,3 +7,4 @@ script:
   - rake db:migrate RAILS_ENV=test
   - bundle exec rake db:test:prepare 
   - bundle exec rspec -c spec
+  - bundle exec cucumber features

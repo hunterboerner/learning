@@ -1,13 +1,16 @@
-.header
-	.pure-menu.pure-menu-open.pure-menu-fixed.pure-menu-horizontal
-		%a.pure-menu-heading{:href => root_path} 
-			.red
-				Sample App
-		%ul
-			%li= link_to "Home", root_path
-			%li= link_to "Help", help_path
-			%li= link_to "Sign in", '#'	
-			%li= link_to "Contact", contact_path
-			%li.red WARNING: Not done! Probably will break!
-
-
+#horizontal-menu.pure-menu.pure-menu-open.pure-menu-fixed.pure-menu-horizontal
+    %a.pure-menu-heading{:href => root_path} 
+        .red
+            Sample App
+    %li.red WARNING: Not done! Probably will break!
+    %ul
+        %li= link_to "Home", root_path
+        %li= link_to "Help", help_path
+        - if signed_in?
+            %li= link_to "Sign out", signout_path, method: "delete"
+            %li= link_to "Users", '#'
+            %li= link_to "Profile", current_user
+            %li= link_to "Settings", '#'
+        - else
+            %li= link_to "Sign in", signin_path
+        %li= link_to "Contact", contact_path
