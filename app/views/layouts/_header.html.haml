@@ -10,7 +10,7 @@
             %li= link_to "Sign out", signout_path, method: "delete"
             %li= link_to "Users", '#'
             %li= link_to "Profile", current_user
-            %li= link_to "Settings", '#'
+            %li= link_to "Settings", edit_user_path(current_user)
         - else
             %li= link_to "Sign in", signin_path
         %li= link_to "Contact", contact_path
