@@ -1,4 +1,6 @@
-# I will write a better readme later. _**LAZYNESS**_
+# Sample App. It's an app that's a sample!
+
+This is the app I'm making to follow the [Ruby on Rails Tutorial](http://ruby.railstutorial.org/) The main difference, I'm playing around with purecss stylesheet.
 
 [![Build Status](https://travis-ci.org/hunterboerner/learning.png)](https://travis-ci.org/hunterboerner/learning)
 [![Coverage Status](https://coveralls.io/repos/hunterboerner/learning/badge.png?branch=develop)](https://coveralls.io/r/hunterboerner/learning?branch=develop)
