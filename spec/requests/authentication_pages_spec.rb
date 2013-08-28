@@ -1,6 +1,7 @@
 require 'spec_helper'
 
-describe "Sign in" do
+describe "Authentication" do
+
   subject { page }
 
   describe "signin page" do
@@ -39,6 +40,26 @@ describe "Sign in" do
       describe "followed by signout" do
         before { click_link "Sign out" }
         it { should have_link('Sign in') }
+      end
+    end
+  end
+  
+  describe "authorization" do
+    
+    describe "for non-signed users" do
+      let(:user) { FactoryGirl.create(:user) }
+
+      describe "in the Users controller" do
+        
+        describe "visiting the edit page" do
+          before { visit edit_user_path(user) }
+          it { should have_title('Sign in') }
+        end
+
+        describe "submitting to the update action" do
+          before { patch user_path(user) }
+          specify { expect(response).to redirect_to(signin_path) }
+        end
       end
     end
   end
