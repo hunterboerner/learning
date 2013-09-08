@@ -25,6 +25,24 @@ p {
 padding: 20px;
 }
 
+.change{
+    opacity: 0.5;
+}
+
+.change a{
+    text-decoration: none;
+    color: black;
+    background-color: gray; 
+    -moz-border-radius: 15px; //for mozilla support
+    -webkit-border-radius: 15px; //for chrome support
+    padding: 0.5em;
+
+}
+
+.change:hover{
+    opacity: 1;
+}
+
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
