@@ -21,7 +21,27 @@ $graybg: #EBEBEB;
   src: font-url('RalewayExtraLight.otf');
 }
 
+p { 
+padding: 20px;
+}
 
+.change{
+    opacity: 0.5;
+}
+
+.change a{
+    text-decoration: none;
+    color: black;
+    background-color: gray; 
+    -moz-border-radius: 15px; //for mozilla support
+    -webkit-border-radius: 15px; //for chrome support
+    padding: 0.5em;
+
+}
+
+.change:hover{
+    opacity: 1;
+}
 
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
@@ -72,6 +92,10 @@ body {
     text-align: center;
 }
 
+.l-centered-v{
+    text-align: center;
+    padding-top: 4em;
+}
 
 .header {
     margin: 0 0;
@@ -84,7 +108,6 @@ body {
 .header .pure-menu li a:hover,
 .header .pure-menu li a:focus {
     background: none;
-    border: none;
     color: #aaa;
 }
 
@@ -340,6 +363,7 @@ pre .string, pre .support.value  {
 
 .splash {
     background: $graybg;
+    padding-top: 2.4em;
 
 }
 .splash .splash-head {
