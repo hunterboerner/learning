@@ -1,10 +1,18 @@
-.splash.l-centered
-	.pure-g-r
-		.pure-u-2-3	
-			.l-box.splash-text
-				%h1.splash-head Sample App
-				%h2.splash-subhead
-					This is the home page for the 
-					%a{:href => "http://railstutorial.org/"} Ruby on Rails tutorial.
-				%p 
-					%a.pure-button.primary-button{:href => signup_path} Sign Up
+- if signed_in?
+  .row
+    %aside.span4
+      %section
+        = render 'shared/user_info'
+      %section
+        = render 'shared/micropost_form'
+- else
+  .splash.l-centered
+    .pure-g-r
+      .pure-u-2-3 
+        .l-box.splash-text
+          %h1.splash-head Sample App
+          %h2.splash-subhead
+            This is the home page for the 
+            %a{:href => "http://railstutorial.org/"} Ruby on Rails tutorial.
+          %p 
+            %a.pure-button.primary-button{:href => signup_path} Sign Up
