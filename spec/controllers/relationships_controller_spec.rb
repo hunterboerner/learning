@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-describe "RelationshipsController" do
+describe RelationshipsController do
   
-  let(:user) { FactoryGril.create(:user) }
-  let(:other_user) { FactoryGril.create(:user) }
+  let(:user) { FactoryGirl.create(:user) }
+  let(:other_user) { FactoryGirl.create(:user) }
 
   before { sign_in user, no_capybara: true }
 
