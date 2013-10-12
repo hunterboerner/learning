@@ -11,7 +11,9 @@
   .pure-u-1-5
     .l-centered
       %div{:style => "margin-left: auto; margin-right: auto;"}
-        = gravatar_for @user
+        = gravatar_for @user 
+      = render 'shared/stats'
+      = render 'follow_form' if signed_in?
   .pure-u-1-5
     .l-centered-v
       %h1
